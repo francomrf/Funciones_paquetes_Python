@@ -1,0 +1,121 @@
+1. Crear proyecto: proyecto_ejemplo
+2. Crear la estructura >>> con los nombres
+3. Crear funciones en ejemplo.py
+4. Crear el resto: LICENSE, pyproject.toml, README.md, setup.cfg y carpeta tests
+
+###############pyproject.toml#####################################
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+###############setup.cfg################################
+
+[metadata]
+name = costeopy_package
+version = 0.0.1
+author = Franco F
+author_email = francomrf@gmail.com
+description = Costeo de cas
+long_description = file: README.md
+long_description_content_type = text/markdown
+url = https://github.com/francomrf/Costeo_Python.git
+project_urls =
+    Bug Tracker = https://github.com/francomrf/Costeo_Python.git
+classifiers =
+    Programming Language :: Python :: 3
+    License :: OSI Approved :: MIT License
+    Operating System :: OS Independent
+
+[options]
+package_dir =
+    = src
+packages = find:
+python_requires = >=3.6
+
+[options.packages.find]
+where = src
+
+#####README.md##############################
+
+Este es...
+
+###LICENSE#############
+
+https://choosealicense.com/
+
+***********************
+
+Comprobar:
+
+py -m pip install --upgrade pip
+py -m pip install --upgrade build
+
+5. ir al directorio
+
+d:
+cd proyecto_ejemplo >>>> nombre del proyecto
+
+Correr:
+
+py -m build
+
+Comprobar:
+
+py -m pip install --upgrade twine
+
+Registrar:
+
+https://test.pypi.org/
+https://pypi.org/
+
+Correr:
+
+py -m twine upload --repository testpypi dist/*
+
+6. Abrir colab
+
+copiar enlace de testpy
+
+pip install -i https://test.pypi.org/simple/ costeopy-package
+
+7. Importar paquete creado
+
+from paquete_ejemplo import ejemplo
+
+8. Creación
+
+Correr:
+
+py -m twine upload dist/*
+
+pip install ejemplopackupp4
+
+from ejemplopackupp4 import ejemplo4
+
+costeopy.mancha(2,3)
+
+9. Actualizar paquete
+
+Modificar proyecto(funciones, versión, etc.)
+
+Correr:
+
+py -m build
+
+py -m twine upload dist/*
+
+10. instalar nueva versión
+
+Correr:
+
+pip install --upgrade costeopy_package
+
+
+
+
+
+
+
+
+
